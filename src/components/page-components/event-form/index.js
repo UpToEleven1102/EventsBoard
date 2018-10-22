@@ -14,7 +14,7 @@ class EventForm extends React.Component {
 
   onFormSubmit = event => {
     event.preventDefault()
-    console.log(this.state.event)
+    this.props.handleCreateNewEvent(this.state.event)
   }
 
   onInputChange = e => {
